@@ -1,0 +1,75 @@
+#Header set Set-Cookie "VC-NoCache=1; max-age=900; path=/"
+
+#Header set VC-NoCache "1"
+
+php_value memory_limit 4G
+
+#RewriteOptions inherit
+
+Options +FollowSymlinks  -MultiViews
+
+
+
+RewriteEngine on
+RewriteBase /emrmarketing/
+
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#RewriteCond %{REQUEST_URI} /+[^\.]+$
+#RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+
+
+
+
+RewriteRule ^payment-success/$ payment-success.php
+RewriteRule ^cart/$ cart.php
+RewriteRule ^feedback/$ feedback.php
+RewriteRule ^checkout/$ checkout.php
+RewriteRule ^login/$ login.php
+RewriteRule ^register/$ register.php
+RewriteRule ^wishlist/$ wishlist.php
+RewriteRule ^all-brand/$ all-brand.php
+RewriteRule ^profile/$ profile.php
+RewriteRule ^profile-edit/$ profile-edit.php
+RewriteRule ^order-success/$ order-success.php
+RewriteRule ^search/$ search.php
+RewriteRule ^register-verify/$ register-verify.php
+
+RewriteRule ^gallery/$ gallery.php
+RewriteRule ^blog/$ blog.php
+RewriteRule ^aboutUs/$ about.php
+RewriteRule ^contact/$ contact.php
+RewriteRule ^term-condition/$ term-condition.php
+RewriteRule ^privacy-policy/$ privacy-policy.php
+RewriteRule ^refund-and-cancellation-policy/$ return-policy.php
+RewriteRule ^ad-view-income/$ ad_view_video.php
+RewriteRule ^shipping-policy/$ shipping-policy.php
+
+RewriteRule ^services/$ services.php
+RewriteRule ^blog/([a-zA-Z0-9-]+)/$ single-blog.php?type=$1&type2=$1 [L]
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/$ product.php?seo_keyword=$1&keyword2=$2 [L]
+#RewriteRule ^men/([a-zA-Z0-9-]+)/$ product.php?seo_keyword=$1&keyword2=$2 [L]
+
+
+RewriteRule ^([a-zA-Z0-9-]+)/$ single-product.php?seo_keyword3=$1 [L]
+
+php_value upload_max_filesize 2048M
+php_value post_max_size 2048M
+php_value memory_limit 2048M
+php_value max_execution_time 1800
+php_value max_input_time 120
+php_value max_input_vars 3000
+
+
+
+
+ErrorDocument 404 404.php
+

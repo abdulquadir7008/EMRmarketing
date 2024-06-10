@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "874bf0faf4cc7b188c39ad48cac2b7c2",
+    "packages": [
+        {
+            "name": "ntwindia/ntwindia",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swashata/php-number-to-word-india.git",
+                "reference": "ecfe93f92cfa727d5def087d528c07c1d6426022"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swashata/php-number-to-word-india/zipball/ecfe93f92cfa727d5def087d528c07c1d6426022",
+                "reference": "ecfe93f92cfa727d5def087d528c07c1d6426022",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NTWIndia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "description": "Convert number to word in Indian English.",
+            "homepage": "https://github.com/swashata/php-number-to-word-india",
+            "keywords": [
+                "number",
+                "number-to-words",
+                "words"
+            ],
+            "support": {
+                "issues": "https://github.com/swashata/php-number-to-word-india/issues",
+                "source": "https://github.com/swashata/php-number-to-word-india/tree/master"
+            },
+            "time": "2017-08-09T18:05:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
